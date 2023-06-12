@@ -17,6 +17,8 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
         binding.textView.setOnClickListener{
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
@@ -34,13 +36,19 @@ class SignInActivity : AppCompatActivity() {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                         finish()
-                    }else {
+                    } else {
                         Toast.makeText(this, "Erro ao logar usuário", Toast.LENGTH_SHORT).show()
                     }
                 }
-            }else {
-                Toast.makeText(this, "Porfavor preencha todos os campos", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Por favor preencha todos os campos", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.textView2.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

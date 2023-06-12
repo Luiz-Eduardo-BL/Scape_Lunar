@@ -7,6 +7,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:271122622819:android:48f711057324d5c6fd8b56",
+        "android_client_info": {
+          "package_name": "com.mobile.spacelunar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271122622819-t2144h25h26ul4t3mvi194o9c2f110gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMHFRoYtgg0lUZngEbVycW8f3ew-qehCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271122622819-t2144h25h26ul4t3mvi194o9c2f110gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:271122622819:android:7a7b4a4fdbe07f72fd8b56",
         "android_client_info": {
           "package_name": "com.mobilegame.spacelunar"
